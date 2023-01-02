@@ -19,7 +19,7 @@ app.use('/post', postRoutes);  //---> all the routes in the postRout method will
 /**					DATABASE CONNECTION								**/
 
 // replace "<username>" and "<password>" with the real cradentials.
-const CONNECTION_URL = "mongodb+srv://<username>:<password>@cluster0.czx1sbk.mongodb.net/?retryWrites=true&w=majority";
+const CONNECTION_URL = "mongodb+srv://mern-memory-app:mern-memory-app@cluster0.czx1sbk.mongodb.net/?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
 mongoose.set('strictQuery', false);
 mongoose.connect(CONNECTION_URL)
